@@ -1,0 +1,14 @@
+{
+	"name": "battleship",
+	"version": "1.0.0",
+	"main": "./scr/main.js",
+	"scripts": {
+		"test": "jest --watchAll"
+	},
+	"author": "HamzaChera",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"jest": "^29.7.0"
+	}
+}
