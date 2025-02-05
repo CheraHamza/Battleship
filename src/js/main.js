@@ -135,4 +135,12 @@ class Gameboard {
 	}
 }
 
-module.exports = { Ship, Gameboard, Cell };
+class Player {
+	constructor(name, type) {
+		this.name = name;
+		this.type = type;
+		this.gameboard = new Gameboard();
+	}
+}
+
+module.exports = { Ship, Gameboard, Cell, Player };
