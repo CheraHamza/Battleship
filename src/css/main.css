@@ -1,0 +1,91 @@
+@font-face {
+	font-family: "RumFont";
+	src: url("../assets/rumFont.ttf");
+}
+
+* {
+	font-family: "RumFont";
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", serif;
+}
+
+body {
+	background-image: url("../assets/background.jpg");
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 0.4);
+	background-blend-mode: darken;
+}
+
+.header {
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #bfdbfe;
+}
+
+.header > img {
+	height: 80%;
+}
+
+.header > .logoText {
+	font-family: "RumFont";
+	font-size: 20px;
+}
+
+.gameContainer {
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.board {
+	min-width: 360px;
+	width: 360px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.rowNbr {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 31.5px;
+	height: 30px;
+}
+
+.columnNbr {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 31.5px;
+	height: 30px;
+}
+
+.cell {
+	width: 30px;
+	height: 30px;
+	border: 1px solid white;
+}
+
+.cell.active:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.cell > img {
+	width: 100%;
+	height: 100%;
+}
+
+#hidden {
+	display: none;
+}
