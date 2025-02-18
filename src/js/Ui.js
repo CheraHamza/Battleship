@@ -3,7 +3,7 @@ import "../css/player.css";
 import "../css/board.css";
 import "../css/game.css";
 import shipIcon from "../assets/ship.svg";
-import hitIcon from "../assets/hit1.svg";
+import hitIcon from "../assets/hit.svg";
 import shipHitIcon from "../assets/hit_ship.svg";
 import { Cell } from "./main.js";
 import { playerSetup } from "./playerSetup.js";
@@ -52,6 +52,18 @@ function addTextChildElement(container, text, className) {
 
 	container.appendChild(elementDiv);
 }
+
+const rulesDialog = document.querySelector("dialog");
+const showButton = document.querySelector(".rules");
+const closeButton = document.querySelector(".closeDialog");
+
+showButton.addEventListener("click", () => {
+	rulesDialog.showModal();
+});
+
+closeButton.addEventListener("click", () => {
+	rulesDialog.close();
+});
 
 let player1, player2;
 
