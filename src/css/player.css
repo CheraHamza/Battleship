@@ -30,8 +30,9 @@
 	margin: 0;
 }
 
-input[type="text"] {
-	font-size: large;
+input#p1Name,
+input#p2Name {
+	font-size: medium;
 	font-weight: bold;
 	padding: 10px;
 	border-radius: 5px;
